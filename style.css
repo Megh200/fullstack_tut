@@ -1,0 +1,23 @@
+
+.stack{
+    color: brown;
+}
+#sc{
+    color:yellow;
+}
+#rt{
+    font-size: 50px;
+}
+#p{
+    color: darkviolet;
+    /* border: rgb(92, 7, 117) groove 3px !important ; */
+    border-color: darkgreen !important;
+    border-bottom: 1px darkgreen !important;
+    border-style: groove !important;
+    width: 80px !important;
+    padding: 30px !important;
+    background-color: aquamarine !important;
+    border-width: 1px 4px !important;
+    outline: 2px red dashed !important;
+    outline-offset: 5px;
+}
