@@ -7,22 +7,112 @@
 
     <link rel="stylesheet" href="/style.css">
 
+    <style>
+        form{
+            background-color: pink;
+            margin: 0px 33% 0px 30%;
+            color: rgb(170, 8, 97);
+            background-image: url('/flower.png');
+                }
+                input,select{
+                    color: rgb(170, 8, 97);
+                }
+
+
+
+    </style>
 
 </head>
-<body>
+<body style="margin: 0px;">
     
-    <form class="stack">
-<label for="name">Name </label>
-<input type="text" id="name">
+    <form>
+<h1 style="margin: 0px;text-align: center;">Form</h1>
+
+<fieldset>
+    <legend>Details</legend>
+
+<label style="margin-left: 10px;" for="name">Name </label>
+<input type="text" required maxlength="2" id="name">
+<br><br>
+<label style="margin-left: 25px;" for="tele">tele</label>
+<select>
+    <option>+91</option>
+    <option>201</option>
+</select>
+<input type="tel" pattern="[9]{1}[0-9]{9}" id="tele">
+<br><br>
+<label style="margin-left: -11px;" for="pass">Password</label>
+<input type="password" disabled placeholder="8 characters" id="pass">
+</fieldset>
+
 <br>
-<label for="pass">Password</label>
-<input type="password" name="password" id="pass">
-<label for="tel">No.</label>
-<input type="tel" id="tel">
-<label for="date">date</label>
-<input type="date" id="date">
+<label style="margin-left: 40px;" for="date">dob</label>
+<input type="date" min="2004-08-13" max="2005-08-27" id="date">
+<br><br>
+<label style="margin-left: 24px;" for="month">month </label>
+<input type="month" id="month">
+<br><br>
+
+<!-- only video file selection -->
+<input style="margin-left: 70px;" type="file" accept="video/*" ><br><br>
+
+<!-- <input type="file" multiple>            //for multiple files selection -->
+
+<label style="margin-left: 40px;" for="male">male</label>
+<input type="radio" id="radio" name="gender" value="m">
+<label style="margin-left: 10px;" for="female">female</label>
+<input type="radio" id="radio" name="gender" value="f">
+<br><br>
+<input style="margin-left: 65px;" type="datetime-local">
+<br><br>
+<input style="margin-left: 65px;" type="checkbox" id="check">
+<label for="check">if u are 18 years old</label>
+<br><br>
+<input style="margin-left: 65px;" type="checkbox" id="check">
+<label for="check">if u are a student</label>
+<br><br>
+
+<label style="margin-left: 62px;" ></label>
+<input type="color"><br><br>
+<label style="margin-left: 33px;" for="num">num</label>
+<input type="number" min="5" max="10" id="num">
+<br><br>
+
+<select style="margin-left: 64px;" >
+    <optgroup label="own">
+<option disabled value="1">car</option>
+<option value="2">scooty</option>
+<option value="3">bike</option>
+</optgroup>
+
+<optgroup label="other">
+    <option value="4">plane</option>
+    <option value="5">boat</option>
+    <option value="6">bus</option>
+    </optgroup>
+</select>
+<br><br>
+
+<textarea style="margin-left: 64px;" id="discrip" cols="15" rows="4" placeholder="write here"></textarea>
+
+
+
+<br><br>
+<!-- input type image used as submit see below -->
+<input style="margin-left: 20%;" type="image" src="/spotify.png" width="50px">
+<br>
+<input style="margin-left: 64px;" type="submit" value="login">
+<!-- <input type="submit"> -->
+<!-- <button>Submit</button> -->
+<input type="reset">
+<br><br>
+
+
+
     </form>
 
+
+    <img src="spidy.png">
 
 </body>
 </html>
